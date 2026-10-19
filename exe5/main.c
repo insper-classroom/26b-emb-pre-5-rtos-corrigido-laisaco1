@@ -14,7 +14,7 @@
 QueueHandle_t xQueueButtons;
 
 void btn_callback(uint gpio, uint32_t events) {
-    if (events & GPIO_IRQ_EDGE_FALL_MASK) {
+    if (events & GPIO_IRQ_EDGE_FALL) {
         uint32_t button_pin = gpio;
         BaseType_t higherPriorityTaskWoken = pdFALSE;
 
