@@ -1,36 +1,46 @@
 {
-    "cmake.options.statusBarVisibility": "visible",
+    "cmake.showSystemKits": false,
+    "cmake.options.statusBarVisibility": "hidden",
     "cmake.options.advanced": {
         "build": {
-            "statusBarVisibility": "visible"
+            "statusBarVisibility": "hidden"
+        },
+        "launch": {
+            "statusBarVisibility": "hidden"
+        },
+        "debug": {
+            "statusBarVisibility": "hidden"
+        },
+        "variant": {
+            "statusBarVisibility": "hidden"
+        },
+        "buildTarget": {
+            "statusBarVisibility": "hidden"
         }
     },
-
-    "github.copilot.advanced": {
-        "inlineSuggest.enable": true,
-        "panel.enable": false,
-        "chat.enable": false,
-        "commands.enable": false
+    "cmake.configureOnEdit": false,
+    "cmake.automaticReconfigure": false,
+    "cmake.configureOnOpen": false,
+    "cmake.generator": "Ninja",
+    "cmake.cmakePath": "${userHome}/.pico-sdk/cmake/v4.3.4/bin/cmake",
+    "C_Cpp.debugShortcut": false,
+    "terminal.integrated.env.windows": {
+        "PICO_SDK_PATH": "${env:USERPROFILE}/.pico-sdk/sdk/2.3.1",
+        "PICO_TOOLCHAIN_PATH": "${env:USERPROFILE}/.pico-sdk/toolchain/15_2_Rel1",
+        "Path": "${env:USERPROFILE}/.pico-sdk/toolchain/15_2_Rel1/bin;${env:USERPROFILE}/.pico-sdk/picotool/2.3.1/picotool;${env:USERPROFILE}/.pico-sdk/cmake/v4.3.4/bin;${env:USERPROFILE}/.pico-sdk/ninja/v1.13.2;${env:PATH}"
     },
-    "github.copilot.editor.enableAutoCompletions": true,
-    "github.copilot.editor.enableCodeActions": false,
-    "github.copilot.renameSuggestions.triggerAutomatically": false,
-    "chat.commandCenter.enabled": false,
-    "github.copilot.chat.search.semanticTextResults": false,
-    "github.copilot.nextEditSuggestions.enabled": false,
-    "github.copilot.chat.followUps": "never",
-    "github.copilot.chat.localeOverride": "en",
-    "github.copilot.chat.useProjectTemplates": false,
-    "github.copilot.chat.scopeSelection": false,
-    "github.copilot.chat.terminalChatLocation": "terminal",
-    "inlineChat.finishOnType": false,
-    "inlineChat.holdToSpeech": false,
-    "inlineChat.lineNaturalLanguageHint": false,
-    "cmake.pinnedCommands": [
-        "workbench.action.tasks.configureTaskRunner",
-        "workbench.action.tasks.runTask"
-    ],
-    "files.associations": {
-        "stdlib.h": "c"
-    }
+    "terminal.integrated.env.osx": {
+        "PICO_SDK_PATH": "${env:HOME}/.pico-sdk/sdk/2.3.1",
+        "PICO_TOOLCHAIN_PATH": "${env:HOME}/.pico-sdk/toolchain/15_2_Rel1",
+        "PATH": "${env:HOME}/.pico-sdk/toolchain/15_2_Rel1/bin:${env:HOME}/.pico-sdk/picotool/2.3.1/picotool:${env:HOME}/.pico-sdk/cmake/v4.3.4/bin:${env:HOME}/.pico-sdk/ninja/v1.13.2:${env:PATH}"
+    },
+    "terminal.integrated.env.linux": {
+        "PICO_SDK_PATH": "${env:HOME}/.pico-sdk/sdk/2.3.1",
+        "PICO_TOOLCHAIN_PATH": "${env:HOME}/.pico-sdk/toolchain/15_2_Rel1",
+        "PATH": "${env:HOME}/.pico-sdk/toolchain/15_2_Rel1/bin:${env:HOME}/.pico-sdk/picotool/2.3.1/picotool:${env:HOME}/.pico-sdk/cmake/v4.3.4/bin:${env:HOME}/.pico-sdk/ninja/v1.13.2:${env:PATH}"
+    },
+    "raspberry-pi-pico.cmakeAutoConfigure": true,
+    "raspberry-pi-pico.useCmakeTools": false,
+    "raspberry-pi-pico.cmakePath": "${HOME}/.pico-sdk/cmake/v4.3.4/bin/cmake",
+    "raspberry-pi-pico.ninjaPath": "${HOME}/.pico-sdk/ninja/v1.13.2/ninja"
 }
