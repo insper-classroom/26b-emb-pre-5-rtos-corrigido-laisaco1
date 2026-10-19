@@ -20,7 +20,7 @@ QueueHandle_t xQueueButIdR;
 QueueHandle_t xQueueButIdG;
 
 void btn_callback(uint gpio, uint32_t events) {
-    if (events & GPIO_IRQ_EDGE_FALL_MASK) {
+    if (events & GPIO_IRQ_EDGE_FALL) {
         int evento = 1;
         BaseType_t higherPriorityTaskWoken = pdFALSE;
 
