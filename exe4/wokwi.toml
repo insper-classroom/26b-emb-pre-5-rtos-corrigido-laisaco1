@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = "../build/exe4/exe4.uf2"
+elf = "../build/exe4/exe4.elf"

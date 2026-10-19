@@ -1,0 +1,8 @@
+forbiten:
+  - names:
+    - sleep_ms
+    - sleep_us
+    - busy_wait_ms
+    - busy_wait_us
+    - tight_loop_contents
+    error_text: Você não deve utilizar nenhuma funcão de sleep ou delay. Use o timer.

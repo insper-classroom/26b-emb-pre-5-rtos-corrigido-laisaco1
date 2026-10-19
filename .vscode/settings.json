@@ -1,0 +1,36 @@
+{
+    "cmake.options.statusBarVisibility": "visible",
+    "cmake.options.advanced": {
+        "build": {
+            "statusBarVisibility": "visible"
+        }
+    },
+
+    "github.copilot.advanced": {
+        "inlineSuggest.enable": true,
+        "panel.enable": false,
+        "chat.enable": false,
+        "commands.enable": false
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.editor.enableCodeActions": false,
+    "github.copilot.renameSuggestions.triggerAutomatically": false,
+    "chat.commandCenter.enabled": false,
+    "github.copilot.chat.search.semanticTextResults": false,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.chat.followUps": "never",
+    "github.copilot.chat.localeOverride": "en",
+    "github.copilot.chat.useProjectTemplates": false,
+    "github.copilot.chat.scopeSelection": false,
+    "github.copilot.chat.terminalChatLocation": "terminal",
+    "inlineChat.finishOnType": false,
+    "inlineChat.holdToSpeech": false,
+    "inlineChat.lineNaturalLanguageHint": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "files.associations": {
+        "stdlib.h": "c"
+    }
+}

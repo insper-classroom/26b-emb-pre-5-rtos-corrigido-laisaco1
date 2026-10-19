@@ -1,0 +1,28 @@
+forbiten:
+  - names:
+    - sleep_ms
+    - sleep_us
+    - busy_wait_ms
+    - busy_wait_us
+    - tight_loop_contents
+    error_text: Você não deve utilizar nenhuma funcão de sleep ou delay. Use o timer.
+  - names:
+    - gpio_get
+    error_text: Você não deve fazer pooling no pino, deve utilizar interrupcão para ler os pinos.
+
+shall_have:
+  - names:
+      - xQueueBtn
+      - xSemaphoreLedR
+      - xSemaphoreLedY
+    error_text: O seu código deve necessariamente fazer uso desses recursos do rtos (com os nomes do readme)
+
+  - names:
+      - xQueueReceive
+      - xQueueSendFromISR
+    error_text: Não le ou envia dados na fila do botão?
+
+  - names:
+      - xSemaphoreGive
+      - xSemaphoreTake
+    error_text: Não le ou envia o semáforo?
